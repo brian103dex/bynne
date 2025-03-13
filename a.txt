@@ -1,0 +1,16 @@
+int i;
+void setup()
+{
+ for(i=2;i<=6;i++)
+ pinMode(i,OUTPUT);
+}
+void loop()
+{
+int pot=analogRead(A0);  	 
+  for(i=2;i<=6;i++)
+  {   digitalWrite(i,1);
+    delay(pot);
+  }
+  for(i=2;i<=6;i++)
+  {
+  digitalWrite(i,0);    delay(pot);} }
